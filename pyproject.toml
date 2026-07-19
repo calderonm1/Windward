@@ -1,0 +1,27 @@
+[project]
+name = "windward"
+version = "0.1.0"
+description = "Windward: A Reinforcement Learning Sailing Simulator"
+requires-python = ">=3.11"
+readme = "README.md"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "torch>=2.0",
+    "stable-baselines3>=2.0",
+    "gymnasium>=0.29",
+    "pyyaml>=6.0",
+    "tensorboard>=2.15",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["windward*"]

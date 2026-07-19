@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Training artifacts
+runs/
+checkpoints/
+*.tensorboard/
+
+# Node / viewer
+viewer/node_modules/
+viewer/dist/
+
+# OS
+.DS_Store
